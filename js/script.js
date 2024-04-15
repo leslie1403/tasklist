@@ -8,6 +8,17 @@ function init(){
     var input = document.getElementById("entryinput"); //var input retreives user entry
     document.getElementById("textoutput").innerHTML = input.value; //changes the text to show the input 
     alert('Leslie Esquivel: ' + input.value); //alert box
+  
+    var checkBox = document.getElementById("Sunday");
+    // Get the output text
+    var text = document.getElementById("Sunday");
+
+    // If the checkbox is checked, display the output text
+    if (checkBox.checked == true){
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
   }
   //action function completes tasks when entry is inputted 
 
