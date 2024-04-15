@@ -9,19 +9,16 @@
 
 <body>
   <h1 class="center">Tasklist</h1>
-  <div> 
-    <p>Day of the Week</p>
-    <form>
-      <div id="Sunday">
-        <label><input type="radio" name="day_field[]" id="Sunday">Sunday</label>
-      </div>
-    </form>
-  </div>
-
-  <div id="container">
-    <input id="entryinput" type="text" name="textentry" placeholder="Enter a Message">
-    <div id="entrybutton">Submit</div>
-    <h2 id="textoutput" class="center">Show results here</h2>
-  </div>
+  </p>
+      Gender:
+      <input type="radio" name="planner" value="JB">Janessa
+      <input type="radio" name="planner" value="JRM">Jeannette
+      <input type="radio" name="planner" value="NC">Nancy
+      
+      <button type="button" onclick="displayRadioValue()">
+          Submit
+      </button>
+      
+      <div id="result"></div>
 </body>
 </html>
