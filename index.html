@@ -2,13 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Basic JavaScript Event Handling and DOM</title>
+  <title>Tasklist Tool</title>
   <link rel="stylesheet" href="style/style.css">
   <script async src="js/script.js"></script>
 </head>
 <body>
   <h1 class="center">Basic JavaScript Event Handling and DOM</h1>
-  <p class="center">Remember to watch the video in the repository to see how your output should function</p>
+  <div>
+    <div><label>Sunday<input type="checkbox" name="available_field[]" value="Sunday"></label></div>
+    <div><label>Monday<input type="checkbox" name="available_field[]" value="Monday"></label></div>
+    <div><label>Tuesday<input type="checkbox" name="available_field[]" value="Tuesday"></label></div>
+    <div><label>Wednesday<input type="checkbox" name="available_field[]" value="Wednesday"></label></div>
+    <div><label>Thursday<input type="checkbox" name="available_field[]" value="Thursday"></label></div>
+    <div><label>Friday<input type="checkbox" name="available_field[]" value="Friday"></label></div>
+    <div><label>Saturday<input type="checkbox" name="available_field[]" value="Saturday"></label></div>
+    <h3>Comments</h3>
+    <textarea name="comments_field" cols="20" rows="3"></textarea>
+  </div>
+
   <div id="container">
     <input id="entryinput" type="text" name="textentry" placeholder="Enter a Message">
     <div id="entrybutton">Alert Me</div>
