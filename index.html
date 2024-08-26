@@ -8,17 +8,138 @@
 </head>
 
 <body>
-  <h1 class="center">Tasklist</h1>
-  </p>
-      Gender:
-      <input type="radio" name="planner" value="JB">Janessa
-      <input type="radio" name="planner" value="JRM">Jeannette
-      <input type="radio" name="planner" value="NC">Nancy
+  <h1 class="center">Tasklist - Event Template</h1>
+  <div id="building">
+    <h2>Buildings</h2>
+    <div><label><input type="checkbox" name="available_field[]" value="Hermann Hall">Hermann Hall</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="MTCC">MTCC</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Kaplan">Kaplan</label></div>
+  </div>
+
+  <div id="hermannSpaces">
+    <h2>HH Spaces</h2>
+    <div><label><input type="checkbox" name="available_field[]" value="HH Ball">HH Ball</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="HH Aud">HH Aud</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Alumni Lounge">Alumni Lounge</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Hermann Lounge">Hermann Lounge</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Gallery Lounge">Gallery Lounge</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Main Lobby">Main Lobby</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Expo">Expo</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Crown Room">Crown Room</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Field Room">Field Room</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Saturday">Classrooms</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Faculty Lounge">Faculty Lounge</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Saturday">BOG Rec Area</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Saturday">BOG Stage</label></div>
+  </div>
+
+  <div id="mtccSpaces">
+    <h2>MTCC Spaces</h2>
+    <div><label><input type="checkbox" name="available_field[]" value="MT Ball">MT Ball</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="MT Aud">MT Aud</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Top of Stairs">Top of Stairs</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Colored Rooms">Colored Rooms</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Brown Room">Brown Room</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Yellow Room">Yellow Room</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Blue Room">Blue Room</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Center Court">Center Court</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="PClub Main Dining">PClub Main Dining</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="PClub Side Rooms">PClub Side Rooms</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Welcome Center">Welcome Center</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Bridge">Bridge</label></div>
+  </div>
+
+  <div id="kaplanSpaces">
+    <h2>Kaplan Spaces</h2>
+    <div><label><input type="checkbox" name="available_field[]" value="Pitch">Pitch</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Tellabs">Tellabs</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Steelcase">Steelcase</label></div>
+    <div><label><input type="checkbox" name="available_field[]" value="Cafe">Cafe</label></div>
+  </div>
+
+  <div id="timeStart">
+    <label for="start">Start Time</label>
+    <select name="hour" id="hour">
+      <option value=1>1</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4</option>
+      <option value=5>5</option>
+      <option value=6>6</option>
+      <option value=7>7</option>
+      <option value=8>8</option>
+      <option value=9>9</option>
+      <option value=10>10</option>
+      <option value=11>11</option>
+      <option value=12>12</option>
+    </select>
+    :
+    <select name="minute" id="minute">
+      <option value=00>00</option>
+      <option value=15>15</option>
+      <option value=30>30</option>
+      <option value=45>45</option>
+    </select>
+
+    <select name="don" id="don">
+      <option value="am">AM</option>
+      <option value="pm">PM</option>
+    </select>
+  </div>
+
+  <div id="timeEnd">
+    <label for="end">End .Time</label>
+    <select name="hour" id="hour">
+      <option value=1>1</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>4</option>
+      <option value=5>5</option>
+      <option value=6>6</option>
+      <option value=7>7</option>
+      <option value=8>8</option>
+      <option value=9>9</option>
+      <option value=10>10</option>
+      <option value=11>11</option>
+      <option value=12>12</option>
+    </select>
+    :
+    <select name="minute" id="minute">
+      <option value=00>00</option>
+      <option value=15>15</option>
+      <option value=30>30</option>
+      <option value=45>45</option>
+    </select>
+
+    <select name="don" id="don">
+      <option value="am">AM</option>
+      <option value="pm">PM</option>
+    </select>
+  </div>
+
+  <div id="eventName">
+    <label for="eventName">Event:</label>
+    <input type="text" id="eventName" name="eventName" placeholder="Event Name">
+  </div>
+
+  <div id="planner">
+    <h2>Planner: </h2>
+    <ul>
+      <li><input type="radio" name="planner" value="JB">Janessa</li>
+      <li><input type="radio" name="planner" value="JRM">Jeannette</li>
+      <li><input type="radio" name="planner" value="NC">Nancy</li>
+      <li><input type="radio" name="planner" value="OSL">Office of Student Life</li>
+      <li><input type="radio" name="planner" value="KH">Katherine</li>
+      <li><input type="radio" name="planner" value="GD">Graham</li>
+      <li><input type="radio" name="planner" value="PF">Patrick</li>
+      <li><input type="radio" name="planner" value="SH">Sarah</li>
+    </ul>
+  </div>
+
+  <div id="resID">
+    <label for="resID">ResID:</label>
+    <input type="text" id="resID" name="resID" placeholder="#####">
+  </div>
       
-      <button type="button" onclick="displayRadioValue()">
-          Submit
-      </button>
-      
-      <div id="result"></div>
 </body>
 </html>

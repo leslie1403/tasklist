@@ -1,16 +1,14 @@
 function init(){   
-
-   function displayRadioValue() {
-              var ele = document.getElementsByName('planner');
+  function displayRadioValue() {
+    var ele = document.getElementsByName('planner');
    
-              for (i = 0; i < ele.length; i++) {
-                  if (ele[i].checked)
-                      document.getElementById("result").innerHTML
-                          = "Planner: " + ele[i].value;
-              }
-          }
-
+    for (i = 0; i < ele.length; i++) {
+      if (ele[i].checked)
+      document.getElementById("result").innerHTML= "Planner: " + ele[i].value;
+    }
+  }
 }  
+
 window.addEventListener('load', init);
 /*
 //add your javascrip between these two lines of code
