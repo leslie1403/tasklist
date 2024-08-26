@@ -57,73 +57,83 @@
     <div><label><input type="checkbox" name="available_field[]" value="Cafe">Cafe</label></div>
   </div>
 
-  <div id="timeStart">
-    <label for="start">Start Time</label>
-    <select name="hour" id="hour">
-      <option value=1>1</option>
-      <option value=2>2</option>
-      <option value=3>3</option>
-      <option value=4>4</option>
-      <option value=5>5</option>
-      <option value=6>6</option>
-      <option value=7>7</option>
-      <option value=8>8</option>
-      <option value=9>9</option>
-      <option value=10>10</option>
-      <option value=11>11</option>
-      <option value=12>12</option>
-    </select>
-    :
-    <select name="minute" id="minute">
-      <option value=00>00</option>
-      <option value=15>15</option>
-      <option value=30>30</option>
-      <option value=45>45</option>
-    </select>
+  <div id="eventInfo">
+    <h2>Event Info</h2>
 
-    <select name="don" id="don">
-      <option value="am">AM</option>
-      <option value="pm">PM</option>
-    </select>
-  </div>
+    <div id="eventName">
+      <label for="eventName">Event:</label>
+      <input type="text" id="eventName" name="eventName" placeholder="Event Name">
+    </div>
 
-  <div id="timeEnd">
-    <label for="end">End .Time</label>
-    <select name="hour" id="hour">
-      <option value=1>1</option>
-      <option value=2>2</option>
-      <option value=3>3</option>
-      <option value=4>4</option>
-      <option value=5>5</option>
-      <option value=6>6</option>
-      <option value=7>7</option>
-      <option value=8>8</option>
-      <option value=9>9</option>
-      <option value=10>10</option>
-      <option value=11>11</option>
-      <option value=12>12</option>
-    </select>
-    :
-    <select name="minute" id="minute">
-      <option value=00>00</option>
-      <option value=15>15</option>
-      <option value=30>30</option>
-      <option value=45>45</option>
-    </select>
+    <div id="timeStart">
+      <label for="start">Start Time</label>
+      <select name="hour" id="hour">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+        <option value=5>5</option>
+        <option value=6>6</option>
+        <option value=7>7</option>
+        <option value=8>8</option>
+        <option value=9>9</option>
+        <option value=10>10</option>
+        <option value=11>11</option>
+        <option value=12>12</option>
+      </select>
+      :
+      <select name="minute" id="minute">
+        <option value=00>00</option>
+        <option value=15>15</option>
+        <option value=30>30</option>
+        <option value=45>45</option>
+      </select>
 
-    <select name="don" id="don">
-      <option value="am">AM</option>
-      <option value="pm">PM</option>
-    </select>
-  </div>
+      <select name="don" id="don">
+        <option value="am">AM</option>
+        <option value="pm">PM</option>
+      </select>
+    </div>
 
-  <div id="eventName">
-    <label for="eventName">Event:</label>
-    <input type="text" id="eventName" name="eventName" placeholder="Event Name">
+    <div id="timeEnd">
+      <label for="end">End .Time</label>
+      <select name="hour" id="hour">
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+        <option value=5>5</option>
+        <option value=6>6</option>
+        <option value=7>7</option>
+        <option value=8>8</option>
+        <option value=9>9</option>
+        <option value=10>10</option>
+        <option value=11>11</option>
+        <option value=12>12</option>
+      </select>
+      :
+      <select name="minute" id="minute">
+        <option value=00>00</option>
+        <option value=15>15</option>
+        <option value=30>30</option>
+        <option value=45>45</option>
+      </select>
+
+      <select name="don" id="don">
+        <option value="am">AM</option>
+        <option value="pm">PM</option>
+      </select>
+    </div>
+
+    <div id="resID">
+      <label for="resID">ResID:</label>
+      <input type="text" id="resID" name="resID" placeholder="#####">
+    </div>
+
   </div>
 
   <div id="planner">
-    <h2>Planner: </h2>
+    <h2>Planner</h2>
     <ul>
       <li><input type="radio" name="planner" value="JB">Janessa</li>
       <li><input type="radio" name="planner" value="JRM">Jeannette</li>
@@ -136,10 +146,7 @@
     </ul>
   </div>
 
-  <div id="resID">
-    <label for="resID">ResID:</label>
-    <input type="text" id="resID" name="resID" placeholder="#####">
-  </div>
+  
       
 </body>
 </html>
